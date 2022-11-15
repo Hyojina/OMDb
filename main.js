@@ -101,7 +101,7 @@
 
       if (movie.Poster === "N/A")
         imgEl.src =
-          "https://raw.githubusercontent.com/Hyojina/OMDb/main/images/noimage.jpg";
+          "https://raw.githubusercontent.com/Hyojina/OMDb/main/images/no.jpg";
       else imgEl.src = movie.Poster;
 
       el.append(imgEl, h1El);
