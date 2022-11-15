@@ -99,7 +99,9 @@
       h1El.textContent = movie.Title;
       const imgEl = document.createElement("img");
 
-      if (movie.Poster === "N/A") imgEl.src = "/images/noimage.jpg";
+      if (movie.Poster === "N/A")
+        imgEl.src =
+          "https://raw.githubusercontent.com/Hyojina/OMDb/main/images/noimage.jpg";
       else imgEl.src = movie.Poster;
 
       el.append(imgEl, h1El);
