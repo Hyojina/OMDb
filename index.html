@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 스타일 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- js -->
+    <script defer src="./main.js"></script>
+    <title>영화 찾아 삼만리</title>
+  </head>
+  <body>
+    <!-- 상단바 -->
+    <header>
+      <div class="menu">
+        <a href="./index.html"> <div class="menu__search">영화 찾기</div></a>
+        <a href="./info.html"> <div class="menu__maker">만든사람 보기</div></a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="title">
+        <div class="title__top">
+          <a href=""><div></div></a>
+          <a href=""><h1>영화 찾아 삼만리</h1></a>
+        </div>
+        <p>
+          찾고싶은 영화가 있으신가요? <br />영화를 찾아 삼만리를 떠나봅시다..
+        </p>
+      </div>
+      <div class="search">
+        <section class="left">
+          <div class="search__option">
+            <select class="search__type">
+              <option value="movie ">movie</option>
+              <option value="series">series</option>
+              <option value="episode">episode</option>
+            </select>
+            <select class="search__num">
+              <option value="1">10</option>
+              <option value="2">20</option>
+              <option value="3">30</option>
+            </select>
+            <select class="search__year">
+              <option value="">All Years</option>
+            </select>
+          </div>
+          <input
+            class="search__text"
+            type="text"
+            placeholder="키워드를 입력하세요. (3글자 이상! 영어 필수!)"
+          />
+        </section>
+        <section class="right">
+          <div class="search__btn">GO</div>
+        </section>
+      </div>
+      <div class="result">
+        <div class="result__movies"></div>
+        <img class="result__load hidden" src="./images/text_loading.gif" />
+        <img class="result__short hidden" src="./images/text_short.png" />
+        <img class="result__nothing hidden" src="./images/text_nothing.png" />
+      </div>
+      <div class="actions">
+        <div class="btn hidden">더 찾아 헤매기</div>
+      </div>
+    </div>
+  </body>
+</html>
